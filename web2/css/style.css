@@ -1,22 +1,22 @@
 body {
-    color : black;
+    color : rgb(70, 70, 70);
     background-color : rgb(243, 238, 232);
     width: 1024px;
     margin: 80px auto;
     font-family: 'Times New Roman', 'Noto Serif KR', serif;
-    display: flex;
+    display: block;
     align-items: center;
 }
 a {
-    color:black;
+    color:rgb(70, 70, 70);
     text-decoration: none;
     margin: 1%;
 }
 .body-shadow {
     box-shadow: 2px 2px 10px 1px rgba(128, 128, 128, 0.425);
 }
-#grid{
-    color : black;
+#header{
+    color : rgb(70, 70, 70);
     background-color : rgb(255, 255, 255);
     width: 1024px;
     height: 60px;
@@ -25,8 +25,107 @@ a {
     display: grid;
     text-align: center;
 }
-#grid-upperLine {
+#header-upperLine {
     width: 1024px;
     height: 5px;
-    background-color : rgb(000,000,000);
+    background-color : rgb(42, 42, 42);
+}
+#container {
+    color : rgb(70, 70, 70);
+    background-color : rgb(255, 255, 255);
+    width: 1024px;
+    display: flex;
+    position: relative;
+    overflow:auto; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.column_left {
+    float: left;
+    width: 590px;
+    padding: 20px;
+}
+.column_right {
+    float: right;
+    width: 310px;
+    height: 800px;
+    padding: 20px;
+    margin: 50px 40px 50px 0px;
+    background-color: rgba(159, 147, 129, 0.224);
+}
+.column_fix_wrap1 {
+    position: relative;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+}
+.account_fix_wrap {
+    position: relative;
+    width: 200px;
+    /* background-color: rgba(159, 147, 129, 0.224); */
+    margin: 0px auto;
+}
+.content_img {
+    width: 159px;
+    height: 244px;
+    float: left;
+    margin: 1px 1px;
+}
+.content_text {
+    width: 140px;
+    height: 200px;
+    float: right;
+    margin: 10px 10px;
+}
+h1 {
+    color: rgb(63, 63, 63);
+}
+h3 {
+    color: rgb(63, 63, 63);
+    text-align: left;
+}
+p {
+    color: rgba(82, 82, 82, 0.537);
+    text-align: left;
+    font-size: 14px;
+}
+#first_content {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(184, 184, 184, 0.472);
+    width: 330px;
+    height: 250px;
+    margin: 30px auto;
+}
+#second_content {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(184, 184, 184, 0.472);
+    width: 330px;
+    height: 250px;
+    margin: 30px auto;
+}
+#third_content {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(184, 184, 184, 0.472);
+    width: 330px;
+    height: 250px;
+    margin: 30px auto;
+}
+#account {
+    width: 200px;
+    height: 300px;
+    background-color: rgba(159, 147, 129, 0.224);
+}
+#account2 {
+    width: 200px;
+    height: 300px;
+    background-color: rgba(159, 147, 129, 0.224);
+}
+#footer {
+    color : rgb(70, 70, 70);
+    background-color : rgb(255, 255, 255);
+    width: 1024px;
+    overflow:auto; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
