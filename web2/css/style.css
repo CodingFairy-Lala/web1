@@ -3,7 +3,7 @@ body {
     background-color : rgb(243, 238, 232);
     width: 1024px;
     margin: 80px auto;
-    font-family: 'Times New Roman', 'Noto Serif KR', serif;
+    font-family: 'Gowun Batang', 'GangwonEduAll', 'Times New Roman', 'Noto Serif KR', serif;
     display: block;
     align-items: center;
 }
@@ -20,6 +20,7 @@ a {
     background-color : rgb(255, 255, 255);
     width: 1024px;
     height: 60px;
+    /* font-family: 'Times New Roman'; */
     font-size: 16px;
     font-weight: bold;
     display: grid;
@@ -34,7 +35,7 @@ a {
     color : rgb(70, 70, 70);
     background-color : rgb(255, 255, 255);
     width: 1024px;
-    display: flex;
+    display: block;
     position: relative;
     overflow:auto; 
     font-size: 16px;
@@ -111,15 +112,55 @@ p {
     margin: 30px auto;
 }
 #account {
-    width: 200px;
     height: 300px;
     background-color: rgba(159, 147, 129, 0.224);
+    margin: 30px auto;
 }
 #account2 {
     width: 200px;
     height: 300px;
     background-color: rgba(159, 147, 129, 0.224);
 }
+#log_in_wrap {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(79, 79, 79);
+}
+input[type="text"] {
+    margin: 1.5px auto;
+    width: 100px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: underline;
+    flex-direction: unset;
+}
+button {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: 'paybooc-Light', sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    margin: 20px;
+}
+button:hover {
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button#submit {
+        background-color: #a3a1a1;
+        color: #e3dede;
+}
+
 #footer {
     color : rgb(70, 70, 70);
     background-color : rgb(255, 255, 255);
@@ -129,3 +170,17 @@ p {
     font-weight: bold;
     text-align: center;
 }
+@font-face {
+    font-family: 'GangwonEduAll';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.ttf') format("truetype");
+    font-display: swap;
+} 
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Sunflower:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
